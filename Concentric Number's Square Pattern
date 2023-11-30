@@ -1,4 +1,5 @@
 # Concentric Number's Square Pattern in Python
+
 n = int(input("Enter a value: "))
 len = 2*n - 1
 start = 0
