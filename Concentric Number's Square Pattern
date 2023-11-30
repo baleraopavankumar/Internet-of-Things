@@ -1,0 +1,18 @@
+# Concentric Number's Square Pattern in Python
+n = int(input("Enter a value: "))
+len = 2*n - 1
+start = 0
+end = len - 1
+a = [[0] * len for _ in range(len)]
+while n != 0:
+    for i in range(start, end+1):
+        for j in range(start, end+1):
+            if i == start or i == end or j == start or j == end:
+                a[i][j] = n
+    start += 1
+    end -= 1
+    n -= 1
+for i in range(len):
+    for j in range(len):
+        print(a[i][j], end="")
+    print()
